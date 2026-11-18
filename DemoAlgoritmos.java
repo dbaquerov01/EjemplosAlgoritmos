@@ -1,4 +1,3 @@
-package EgemplosAlgoritmos;
 public class DemoAlgoritmos {
     public static void main(String[] args) {
         Integer[] array1 = new Integer[100];
