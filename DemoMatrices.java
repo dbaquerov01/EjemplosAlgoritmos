@@ -1,5 +1,3 @@
-import javax.swing.plaf.synth.SynthStyleFactory;
-
 public class DemoMatrices {
     public static void main(String[] args) {
         crearMatriz(10, 10);
