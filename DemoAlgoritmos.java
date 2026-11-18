@@ -60,4 +60,3 @@ public class DemoAlgoritmos {
         System.out.println("Numero " + mayor + " Posicion " + posicion + ".");
     }
 }
-
