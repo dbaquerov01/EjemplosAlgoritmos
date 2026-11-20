@@ -7,11 +7,26 @@ public class DemoMatrices {
         catch(IllegalArgumentException e){
             System.out.println("\n\tLos datos introduidos no son validos.\n");
         }
+
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("-----------------------------");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+
+        Integer[][] matrizPrueba = new Integer[10][10];
+        for(Integer i = 0; i < matrizPrueba.length; i++){
+            for(Integer j = 0; j < matrizPrueba[i].length; j++){
+                matrizPrueba[i][j] = (int) Math.floor(Math.random()*100);
+            }
+        }
+        mostrarMatriz(matrizPrueba);
     }
     static Integer[][] crearMatriz(Integer n1, Integer n2){
-        Integer[][] matriz = null;
-        try{
-            matriz = new Integer[n1][n1];
+        if(n1 < 1 || n2 < 1){
+            Integer[][] matriz = new Integer[n1][n1];
             for(Integer i = 0; i < matriz.length; i++){
                 for(Integer j = 0; j < matriz[i].length; j++){
                     matriz[i][j] = (int) Math.floor(Math.random() * 100);
@@ -19,7 +34,7 @@ public class DemoMatrices {
             }
             return matriz;
         }
-        catch(NegativeArraySizeException e){
+        else{
             throw new IllegalArgumentException();
         }
     }
